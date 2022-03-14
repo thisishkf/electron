@@ -18,6 +18,7 @@
   - [開發](#開發)
     - [程式結構](#程式結構)
     - [基礎](#基礎)
+      - [展示網站](#展示網站)
     - [MacOs環境的用戶體驗](#macos環境的用戶體驗)
   - [封裝生產環境程式](#封裝生產環境程式)
     - [背景](#背景)
@@ -61,6 +62,14 @@ electron
 1. app對應是程式的主执行绪. 用作對BrowserWindow的控制.
 
 2. BrowserWindow對應是瀏覽器視窗.
+
+#### 展示網站
+
+在 `createWindow()`中, 我們簡單地調用 `loadURL()` 來指定視窗目標網址.
+
+```javascript
+win.loadURL(config.url);
+```
 
 ### MacOs環境的用戶體驗
 

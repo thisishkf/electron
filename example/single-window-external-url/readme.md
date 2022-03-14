@@ -18,6 +18,7 @@ goals:
   - [Implementation](#implementation)
     - [Project Structure](#project-structure)
     - [Basic Concept](#basic-concept)
+      - [Display website](#display-website)
     - [MacOs User Experience](#macos-user-experience)
   - [Packaging Production App](#packaging-production-app)
     - [Background](#background)
@@ -61,6 +62,15 @@ In this projec, we are using  `app` and `BrowserWindow` class from electron.
 1. app is relating to the application main thread, controling BrowserWindow.
 
 2. BrowserWindow is relating to the browser window.
+
+#### Display website
+
+In side `createWindow()`, we simplily use `loadURL()` to load a external url.
+
+```javascript
+win.loadURL(config.url);
+```
+
 
 ### MacOs User Experience
 
