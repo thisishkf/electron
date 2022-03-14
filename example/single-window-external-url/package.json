@@ -1,0 +1,13 @@
+{
+  "name": "electron-js",
+  "version": "0.0.1",
+  "description": "Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Sam Ho <hkf1113@gmail.com>",
+  "devDependencies": {
+    "electron": "^17.1.2"
+  }
+}
